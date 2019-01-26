@@ -1,5 +1,4 @@
 const path = require('path');
-const Dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const packageJSON = require('./package.json');
 
@@ -12,7 +11,6 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
-    new Dotenv(),
     new HtmlWebpackPlugin({
       template: '!!html-loader!templates/index.html',
       favicon: './assets/images/favicon.png',
@@ -27,16 +25,24 @@ module.exports = {
       {
         test: /\.m?js$/,
         exclude: /node_modules/,
-        use: 'babel-loader'
+        loader: 'babel-loader'
       },
       {
-        test: /\.(sa|sc|c)ss$/,
+        test: /\.(sa|sc)ss$/,
         exclude: /node_modules/,
         loaders: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
+        test: /\.css$/,
+        loaders: ['style-loader', 'css-loader']
+      },
+      {
         test: /\.html$/,
         loader: 'html-loader'
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
       }
     ]
   }

@@ -4,10 +4,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="UTF-8">
-    <title>My webpack app</title>
+    <title>ES6 From Validation</title>
   </head>
 
   <body>
-    <code>webpack is running! 📦✨👌</code>
+    <div id="background">
+      <ul class="circles">
+        <a href="https://gabriele.canepa.io" target="_blank" id="avatar-link">
+        </a>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li>
+          <a class="github-button" href="https://github.com/gabrielecanepa/es6-form-validation/fork" target="_blank" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork gabrielecanepa/es6-form-validation on GitHub">Fork</a>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div >
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+          <div class="card">
+
+            <form role="form" autocomplete="off" novalidate>
+
+              <div class="form-group">
+                <label class="control-label" for="first-name">First name</label>
+                <input type="text" class="form-control" name="first-name" id="first-name" placeholder="John">
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Doesn't sound like a name 🤔
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label" for="last-name">Last name</label>
+                <input type="text" class="form-control" name="last-name" id="last-name" placeholder="Doe">
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Doesn't sound like a name 🤔
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label" for="email">Email address</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="john@doe.com">
+                <div class="invalid-feedback">
+                  Doesn't seem to be a valid email 🤔
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label" for="phone-number">Phone Number</label>
+                <input type="number" class="form-control" name="phone-number" id="phone-number" placeholder="0601020304">
+                <div class="invalid-feedback">
+                  Doesn't seem to be a valid phone number 🤔
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label" for="city">City</label>
+                <input type="text" class="form-control" name="city" id="city" placeholder="Lisbon">
+                <div class="invalid-feedback">
+                  Doesn't sound like a city 🤔
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label" for="country">Country</label>
+                <input type="text" class="form-control" name="country" id="country" placeholder="Portugal">
+                <div class="invalid-feedback">
+                  Doesn't sound like a county 🤔
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label" for="zip-code">Zip code</label>
+                <input type="number" class="form-control" name="zip-code" id="zip-code" placeholder="1200-109">
+                <div class="invalid-feedback">
+                  ⚠️ Please provide a valid zip
+                </div>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="tos" id="tos">
+                  I agree with the <a href="#">terms of service</a>.
+                </label>
+                <div class="invalid-feedback">
+                  ⚠️ You must agree before submitting
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" disabled>
+                Please fill in all the fields
+              </button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>

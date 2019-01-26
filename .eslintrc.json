@@ -1,7 +1,8 @@
 {
   "extends": "airbnb-base",
   "rules": {
-    "comma-dangle": "off"
+    "comma-dangle": "off",
+    "quote-props": "off"
   },
   "env": {
     "browser": true
