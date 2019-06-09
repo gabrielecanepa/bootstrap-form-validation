@@ -1,9 +1,8 @@
 {
   "name": "es6-form-validation",
-  "version": "1.0.0",
-  "description": "JavaScript form validation with ES6 and Bootstrap",
-  "repository": "https://github.com/gabrielecanepa/es6-form-validation",
-  "author": "Gabriele Canepa <gabriele@canepa.io>",
+  "version": "0.0.1",
+  "description": "Form validation with ES6 and Bootstrap",
+  "repository": "https://github.com/gabrielecanepa/form-validation",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.2.0",
