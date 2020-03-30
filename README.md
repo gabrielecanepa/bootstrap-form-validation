@@ -1,7 +1,5 @@
 # ES6 Form Validation
 
-Application generated with [webpack-init](https://github.com/gabrielecanepa/webpack-init).
-
 ## Usage
 
 Clone the repository on your computer. You must have [Node.js](https://nodejs.org) (> v4) and [Yarn](https://yarnpkg.com/lang/en/docs/install) installed:
