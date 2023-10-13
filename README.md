@@ -1,13 +1,14 @@
-# ES6 Form Validation
+# Bootstrap Form Validation
+
+Form validation using JavaScript and Bootstrap 4 📋
 
 ## Usage
 
 Clone the repository on your computer. You must have [Node.js](https://nodejs.org) (> v4) and [Yarn](https://yarnpkg.com/lang/en/docs/install) installed:
 
 ```bash
-git clone git@github.com:gabrielecanepa/es6-form-validation.git
-cd es6-form-validation
-rm -rf .git
+git clone git@github.com:gabrielecanepa/bootstrap-form-validation.git
+cd bootstrap-form-validation
 yarn install
 ```
 
@@ -39,7 +40,7 @@ To build your static files:
 yarn build
 ```
 
-To push the built files to the `gh-pages` branch and deploy on [GitHub Pages](https://pages.github.com):
+To push the built files to the `gh-pages` branch and deploy to [GitHub Pages](https://pages.github.com):
 
 ```bash
 yarn deploy
